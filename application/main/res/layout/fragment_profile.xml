@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/colorDarkGray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp">
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/iv_user_image"-->
+            <!--                android:layout_width="119dp"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginLeft="30dp"-->
+            <!--                android:scaleType="fitXY"-->
+            <!--                android:src="@drawable/ic_user_photo" />-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/civ_user_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_user_photo"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorWhite"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:autoSizeMaxTextSize="36sp"
+                    android:autoSizeTextType="uniform"
+                    android:fitsSystemWindows="true"
+                    android:maxLines="1"
+                    android:text="ชื่อผู้ใช้"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="คะแนน"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="165dp" >
+
+        <TextView
+            android:id="@+id/tv_redeem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="แลกคะแนน"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="250dp" >
+
+        <TextView
+            android:id="@+id/tv_favor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="รายการโปรด"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="335dp" >
+
+        <TextView
+            android:id="@+id/tv_booking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="รายการจอง"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="430dp" >
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="ออกจากระบบ"
+            android:textAlignment="viewStart"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

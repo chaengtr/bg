@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical"
+    tools:context=".BookingDetailActivity">
+
+    <ImageView
+        android:id="@+id/game_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/game_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="GAME NAME"
+        android:textColor="@color/colorWhite"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkGray"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="จำนวนผู้เล่น"
+        android:textColor="@color/colorWhite" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="เลือกเวลาเริ่ม" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="150dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@color/colorGray" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="จองแบบกลุ่ม" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:onClick="submit"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@color/design_default_color_secondary_variant"
+                    android:text="ยืนยัน"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:onClick="cancel"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/design_default_color_error"
+                    android:text="ยกเลิก"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

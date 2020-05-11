@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".fragment.GoLoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:textStyle="bold"
+            android:text="กรุณาเข้าสู่ระบบ"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_go_sign"
+            android:layout_width="200dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorDarkGray"
+            android:text="เข้าสู่ระบบ" />
+    </LinearLayout>
+
+</FrameLayout>

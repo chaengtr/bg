@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Board Game Cafe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="one_des">oneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</string>
+    <string name="two_des">twooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</string>
+    <string name="three_des">threeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</string>
+
+    <string-array name="game_names">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>one</item>
+        <item>TWO</item>
+        <item>THREE</item>
+    </string-array>
+
+</resources>

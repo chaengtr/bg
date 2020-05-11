@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".RegistrationActivity">
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="99dp"
+        android:text="สมัคร"
+        android:backgroundTint="@color/colorDarkGray"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirm_pass" />
+
+    <EditText
+        android:id="@+id/et_confirm_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="ยืนยันรหัสผ่าน"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorDarkGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="รหัสผ่าน (6 ตัวขึ้นไป)"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorDarkGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="ชื่อผู้ใช้"
+        android:textColorHint="@color/colorDarkGray"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:hint="อีเมล"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorDarkGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_username" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title="หน้าหลัก"
+        android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/nav_group"
+        android:title="หาเพื่อน"
+        android:icon="@drawable/ic_group"/>
+    <item android:id="@+id/nav_noti"
+        android:title="แจ้งเตือน"
+        android:icon="@drawable/ic_noti"/>
+    <item android:id="@+id/nav_profile"
+        android:title="ข้อมูลส่วนตัว"
+        android:icon="@drawable/ic_user_profile"/>
+</menu>
