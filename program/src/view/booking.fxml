@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #6D6D6D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookingPage">
+   <children>
+      <GridPane prefHeight="600.0" prefWidth="900.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="900.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="250.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="140.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6C0B00;">
+               <children>
+                  <GridPane prefHeight="100.0" prefWidth="900.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="400.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="400.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label prefHeight="80.0" prefWidth="400.0" text="ข้อมูลรายการจองเกม" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="48.0" />
+                           </font>
+                        </Label>
+                        <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="125.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="125.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label fx:id="nameLB" alignment="CENTER" prefHeight="46.0" prefWidth="133.0" text="ชื่อพนักงาน" textFill="WHITE" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="TH Sarabun New" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #FADBD8;" text="หน้าหลัก" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="TH Sarabun New Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#handleSignOutButton" prefHeight="40.0" prefWidth="125.0" style="-fx-background-color: #F1948A;" text="ออกจากระบบ" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="TH Sarabun New Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #414141;" GridPane.rowIndex="2">
+               <children>
+                  <GridPane prefWidth="900.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="150.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="80.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="150.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="80.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="30.0" prefWidth="80.0" text="ค้นหา" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="searchTF" promptText="ค้นหาโดยรหัสจอง" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="TH Sarabun New" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#handleDateButton" prefHeight="30.0" prefWidth="80.0" text="ยืนยัน" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <DatePicker fx:id="datePicker" editable="false" maxHeight="30.0" maxWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <columns>
+                  <TableColumn fx:id="codeCol" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" resizable="false" text="รหัสจอง" />
+                  <TableColumn fx:id="cusCol" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" resizable="false" text="ชื่อผู้ใช้" />
+                  <TableColumn fx:id="gameCol" prefWidth="150.0" resizable="false" text="ชื่อเกม" />
+                  <TableColumn fx:id="startCol" maxWidth="75.0" minWidth="75.0" resizable="false" text="เวลาเริ่ม" />
+                  <TableColumn fx:id="endCol" maxWidth="75.0" minWidth="75.0" resizable="false" text="เวลาสิ้นสุด" />
+                  <TableColumn fx:id="usageCol" prefWidth="90.0" resizable="false" text="สถานะการจอง" />
+                  <TableColumn fx:id="receiptCol" prefWidth="90.0" resizable="false" text="สถานะใบเสร็จ" />
+                  <TableColumn fx:id="pointCol" prefWidth="170.0" resizable="false" text="การใช้คะแนน" />
+               </columns>
+               <GridPane.margin>
+                  <Insets left="50.0" right="50.0" />
+               </GridPane.margin>
+            </TableView>
+            <GridPane prefHeight="150.0" prefWidth="900.0" GridPane.rowIndex="6">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="395.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="395.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="140.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #BDBDBD;" GridPane.columnIndex="1">
+                     <children>
+                        <TextField fx:id="codeTF" layoutX="43.0" layoutY="37.0" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" promptText="กรอกรหัสจอง" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font name="TH Sarabun New" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="43.0" layoutY="84.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="40.0" prefWidth="310.0" style="-fx-background-color: #6C0B00;" text="ยกเลิกการจอง" textFill="WHITE" AnchorPane.topAnchor="83.0">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="252.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleSaveCodeButton" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #154360;" text="ยืนยัน" textFill="WHITE" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Separator layoutY="25.0" prefWidth="395.0" style="-fx-background-color: #000000;" />
+                        <Label layoutX="161.0" layoutY="1.0" text="สถานะการจอง">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #BDBDBD;" GridPane.columnIndex="3">
+                     <children>
+                        <Button layoutX="112.0" layoutY="38.0" mnemonicParsing="false" onAction="#handleReceiptButton" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #154360;" text="ออกใบเสร็จ" textFill="WHITE" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Separator layoutY="25.0" prefWidth="395.0" style="-fx-background-color: #000000;" />
+                        <Label layoutX="161.0" layoutY="1.0" text="สถานะใบเสร็จ">
+                           <font>
+                              <Font name="TH Sarabun New Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
